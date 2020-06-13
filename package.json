@@ -22,7 +22,11 @@
     "express": "^4.16.4",
     "express-promise-router": "^3.0.3",
     "express-validator": "^5.3.1",
+    "healthchecks-api": "^0.2.0",
     "morgan": "^1.9.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "ping": "^0.2.3",
+    "ping-wrapper": "0.0.3",
+    "standard-healthcheck": "^1.0.0"
   }
 }
