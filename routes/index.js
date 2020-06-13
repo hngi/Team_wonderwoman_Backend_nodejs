@@ -6,16 +6,18 @@ var ping = require("pingman");
 
 /* GET home page. */
 router.post("/", function (req, res, next) {
-  var host = req.body.host; // accepts post data in json format expecting {"host":"www.something.com"}
+  var url = req.body.url; // accepts post data in json format expecting {"url":"www.something.com"}
   /*var site = new shadower(ops);
-var ops = {};*/
+var ops = {
+
+};*/
   (async () => {
     try {
-      const response = await ping(host);
+      const response = await ping(url);
       console.log(response);
       if (response.alive) {
         res.json({
-          host: host,
+          url: url,
           alive: response.alive,
           min_time: response.min,
           max_time: response.max,
